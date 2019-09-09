@@ -1,12 +1,8 @@
 ﻿using System.Collections.Generic;
-using Xunit;
-using DinoDiner.Menu.Entrees;
-
-
 
 namespace DinoDiner.Menu.Entrees
 {
-    public class PrehistoricPBJ
+    public class VelociWrap
     {
         private bool peanutButter = true;
         private bool jelly = true;
