@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using Xunit;
+using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
 {
@@ -15,6 +17,11 @@ namespace DinoDiner.Menu.Entrees
             get
             {
                 List<string> ingredients = new List<string>() { "Chicken Nugget" };
+                if (chickenNugget) ingredients.Add("Chicken Nugget");
+                if (chickenNugget) ingredients.Add("Chicken Nugget");
+                if (chickenNugget) ingredients.Add("Chicken Nugget");
+                if (chickenNugget) ingredients.Add("Chicken Nugget");
+                if (chickenNugget) ingredients.Add("Chicken Nugget");
                 return ingredients;
             }
         }
@@ -22,12 +29,13 @@ namespace DinoDiner.Menu.Entrees
         public DinoNuggets()
         {
             this.Price = 4.25;
-            this.Calories = 59;
+            this.Calories = 354;
         }
 
         public void AddNugget()
         {
-            Ingredients
+            this.chickenNugget = true;
+            this.Price += .25;
         }
     }
 }

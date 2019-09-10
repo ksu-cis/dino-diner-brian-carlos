@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using Xunit;
+using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
 {
     public class TRexKingBurger
     {
-        
         private bool wholeWheatBun = true;
         private bool steakburgerPattie = true;
         private bool lettuce = true;
@@ -13,6 +14,9 @@ namespace DinoDiner.Menu.Entrees
         private bool pickle = true;
         private bool ketchup = true;
         private bool mustard = true;
+
+        public double Price { get; set; }
+        public uint Calories { get; set; }
 
         public List<string> Ingredients
         {

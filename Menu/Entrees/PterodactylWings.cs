@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using Xunit;
+using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
 {
     public class PterodactylWings
     {
-        
         private bool chicken = true;
         private bool wingSauce = true;
 

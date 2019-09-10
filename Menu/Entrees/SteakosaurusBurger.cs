@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
+using Xunit;
+using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
 {
     public class SteakosaurusBurger
     {
-        
-
         private bool wholeWheatBun = true;
         private bool steakburgerPattie = true;
         private bool pickle = true;
