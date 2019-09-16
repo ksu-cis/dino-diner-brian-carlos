@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Xunit;
 using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
@@ -20,7 +19,7 @@ namespace DinoDiner.Menu.Entrees
             get
             {
                 List<string> ingredients = new List<string>() { "Steakburger Pattie" };
-                if (steakburgerPattie) ingredients.Add("Whole Wheat Bun");
+                if (wholeWheatBun) ingredients.Add("Whole Wheat Bun");
                 if (pickle) ingredients.Add("Pickle");
                 if (ketchup) ingredients.Add("Ketchup");
                 if (mustard) ingredients.Add("Mustard");

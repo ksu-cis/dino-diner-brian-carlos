@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Xunit;
 using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
@@ -10,7 +9,7 @@ namespace DinoDiner.Menu.Entrees
         private bool wingSauce = true;
 
         public double Price { get; set; }
-        public double Calories { get; set; }
+        public uint Calories { get; set; }
 
         public List<string> Ingredients
         {

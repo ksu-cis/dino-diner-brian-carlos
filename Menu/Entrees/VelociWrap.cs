@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Xunit;
 using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
@@ -34,7 +33,7 @@ namespace DinoDiner.Menu.Entrees
             this.Calories = 356;
         }
 
-        public void holdCheese()
+        public void HoldCheese()
         {
             this.parmesanCheese = false;
         }

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Xunit;
 using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
@@ -24,6 +23,10 @@ namespace DinoDiner.Menu.Entrees
                 if (chickenNugget) ingredients.Add("Chicken Nugget");
                 return ingredients;
             }
+            set
+            {
+                Ingredients.Add("Chicken Nugget");
+            }
         }
 
         public DinoNuggets()
@@ -34,8 +37,9 @@ namespace DinoDiner.Menu.Entrees
 
         public void AddNugget()
         {
-            this.chickenNugget = true;
+            if (chickenNugget) Ingredients.Add("Chicken Nugget");
             this.Price += .25;
+            this.Calories += 59;
         }
     }
 }

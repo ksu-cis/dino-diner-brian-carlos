@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Xunit;
 using DinoDiner.Menu.Entrees;
 
 namespace DinoDiner.Menu.Entrees
@@ -14,6 +13,7 @@ namespace DinoDiner.Menu.Entrees
         private bool pickle = true;
         private bool ketchup = true;
         private bool mustard = true;
+        private bool mayo = true;
 
         public double Price { get; set; }
         public uint Calories { get; set; }
@@ -28,10 +28,11 @@ namespace DinoDiner.Menu.Entrees
                 if (wholeWheatBun) ingredients.Add("Whole Wheat Bun");
                 if (lettuce) ingredients.Add("Lettuce");
                 if (tomato) ingredients.Add("Tomato");
-                if (onions) ingredients.Add("Onions");
+                if (onions) ingredients.Add("Onion");
                 if (pickle) ingredients.Add("Pickle");
                 if (ketchup) ingredients.Add("Ketchup");
                 if (mustard) ingredients.Add("Mustard");
+                if (mayo) ingredients.Add("Mayo");
                 return ingredients;
             }
         }
@@ -57,7 +58,7 @@ namespace DinoDiner.Menu.Entrees
             this.tomato = false;
         }
 
-        public void HoldOnions()
+        public void HoldOnion()
         {
             this.onions = false;
         }
@@ -76,6 +77,11 @@ namespace DinoDiner.Menu.Entrees
         public void HoldMustard()
         {
             this.mustard = false;
+        }
+
+        public void HoldMayo()
+        {
+            this.mayo = false;
         }
     }
 }
